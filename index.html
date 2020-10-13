@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Havenly Studio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/Ind.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="sidebar red collapse top large padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="close()" class="button hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="container">
+    <h3 class="padding-64"><b>Havenly<br>Studio</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="close()" class="bar-item button hover-white">Home</a> 
+    <a href="#showcase" onclick="close()" class="bar-item button hover-white">Showcase</a> 
+    <a href="#services" onclick="close()" class="bar-item button hover-white">Services</a> 
+    <a href="#designers" onclick="close()" class="bar-item button hover-white">Designers</a> 
+    <a href="#packages" onclick="close()" class="bar-item button hover-white">Packages</a> 
+    <a href="#contact" onclick="close()" class="bar-item button hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="container top hide-large red xlarge padding">
+  <a href="javascript:void(0)" class="button red margin-right" onclick="open()">☰</a>
+  <span>Havenly Studio</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="overlay hide-large" onclick="close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="container" style="margin-top:80px" id="showcase">
+    <h1 class="jumbo"><b>Interior Design</b></h1>
+    <h1 class="xxxlarge w3-text-red"><b>Showcase.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="row-padding">
+    <div class="half">
+      <img src="images/ad5ad08b-ce64-490d-82dc-42ab571b6f5e.jpeg" style="width:100%" alt="Midcentury Modern Living Room">
+      <img src="images/Untitled-3.jpg" style="width:100%" alt="Modern, Bohemian, Global">
+      <img src="images/b67f952b-b878-4f8d-9eae-4804bc1969b2.jpeg" style="width:100%" alt="Midcentury Modern Living Room">
+    </div>
+
+    <div class="half">
+      <img src="images/Untitled-2.jpg" style="width:100%" alt="Eclectic, Bohemian, Midcentury Modern">
+      <img src="images/d2f21ab3-60f6-45b9-9d91-740551b7fb3a.jpeg" style="width:100%" alt="Eclectic, Bohemian, Global Office">
+      <img src="images/b42fa11d-33be-4b8e-9a4b-2ab04f39484c.jpeg" style="width:100%" alt="Contemporary Living Room">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="modal black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="button black xxlarge display-topright">×</span>
+    <div class="modal-content animate-zoom center transparent padding-64">
+      <img id="img01" class="image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="container" id="services" style="margin-top:75px">
+    <h1 class="xxxlarge text-red"><b>Services.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="round">
+    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+  
+  <!-- Designers -->
+  <div class="container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge text-red"><b>Designers.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="round">
+    <p>The best team in the world.</p>
+    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p><b>Our designers are thoughtfully chosen</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="row-padding grayscale">
+    <div class="col m4 margin-bottom">
+      <div class="light-grey">
+        <img src="images/head1.jpg" alt="John" style="width:100%">
+        <div class="container">
+          <h3>John Doe</h3>
+          <p class="opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col m4 margin-bottom">
+      <div class="light-grey">
+        <img src="images/head2.jpg" alt="Jane" style="width:100%">
+        <div class="container">
+          <h3>Jane Doe</h3>
+          <p class="opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col m4 margin-bottom">
+      <div class="light-grey">
+        <img src="images/head3.jpg" alt="Mike" style="width:100%">
+        <div class="container">
+          <h3>Mike Ross</h3>
+          <p class="opacity">Architect</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="container" id="packages" style="margin-top:75px">
+    <h1 class="xxxlarge text-red"><b>Packages.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="round">
+    <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+  </div>
+
+  <div class="row-padding">
+    <div class="half margin-bottom">
+      <ul class="ul light-grey center">
+        <li class="dark-grey xlarge padding-32">Basic</li>
+        <li class="padding-16">Floorplanning</li>
+        <li class="padding-16">10 hours support</li>
+        <li class="padding-16">Photography</li>
+        <li class="padding-16">20% furniture discount</li>
+        <li class="padding-16">Good deals</li>
+        <li class="padding-16">
+          <h2>$ 199</h2>
+          <span class="opacity">per room</span>
+        </li>
+        <li class="light-grey padding-24">
+          <button class="button white padding-large hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="half">
+      <ul class="ul light-grey center">
+        <li class="red xlarge padding-32">Pro</li>
+        <li class="padding-16">Floorplanning</li>
+        <li class="padding-16">50 hours support</li>
+        <li class="padding-16">Photography</li>
+        <li class="padding-16">50% furniture discount</li>
+        <li class="padding-16">GREAT deals</li>
+        <li class="padding-16">
+          <h2>$ 249</h2>
+          <span class="opacity">per room</span>
+        </li>
+        <li class="light-grey padding-24">
+          <button class="button red padding-large hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="container" id="contact" style="margin-top:75px">
+    <h1 class="xxxlarge text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="round">
+    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="section">
+        <label>Name</label>
+        <input class="input border" type="text" name="Name" required>
+      </div>
+      <div class="section">
+        <label>Email</label>
+        <input class="input border" type="text" name="Email" required>
+      </div>
+      <div class="section">
+        <label>Message</label>
+        <input class="input border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="button block padding-large red margin-bottom">Send Message</button>
+    </form>  
+  </div>
+<div class="light-grey container padding-32" style="margin-top:75px;padding-right:58px"><p class="right">©Havenly Studio.,All rights reserved</p></div>
+
+<!-- End page content -->
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
